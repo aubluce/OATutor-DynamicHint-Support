@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.7a45275b.css",
-    "main.js": "/static/js/main.a528e5f7.js",
-    "static/media/Symbola.svg": "/static/media/Symbola.f647c9292a2da02d9ae8.svg",
-    "static/media/Symbola.eot": "/static/media/Symbola.d25fbd520f6558203fb4.eot",
-    "static/media/Symbola.ttf": "/static/media/Symbola.1ac5fa7f9b82ed4ce3f3.ttf",
-    "static/media/Symbola.woff": "/static/media/Symbola.353fd9bde3c87711f5fc.woff",
-    "static/media/Symbola.woff2": "/static/media/Symbola.080d8bb6a36e8bd8966b.woff2",
-    "index.html": "/index.html",
-    "main.7a45275b.css.map": "/static/css/main.7a45275b.css.map",
-    "main.a528e5f7.js.map": "/static/js/main.a528e5f7.js.map"
+    "main.css": "/OATutor-DynamicHint-Study/static/css/main.93eacdac.css",
+    "main.js": "/OATutor-DynamicHint-Study/static/js/main.3c0bf1ca.js",
+    "static/media/Symbola.svg": "/OATutor-DynamicHint-Study/static/media/Symbola.f647c9292a2da02d9ae8.svg",
+    "static/media/Symbola.eot": "/OATutor-DynamicHint-Study/static/media/Symbola.d25fbd520f6558203fb4.eot",
+    "static/media/Symbola.ttf": "/OATutor-DynamicHint-Study/static/media/Symbola.1ac5fa7f9b82ed4ce3f3.ttf",
+    "static/media/Symbola.woff": "/OATutor-DynamicHint-Study/static/media/Symbola.353fd9bde3c87711f5fc.woff",
+    "static/media/Symbola.woff2": "/OATutor-DynamicHint-Study/static/media/Symbola.080d8bb6a36e8bd8966b.woff2",
+    "index.html": "/OATutor-DynamicHint-Study/index.html",
+    "main.93eacdac.css.map": "/OATutor-DynamicHint-Study/static/css/main.93eacdac.css.map",
+    "main.3c0bf1ca.js.map": "/OATutor-DynamicHint-Study/static/js/main.3c0bf1ca.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a45275b.css",
-    "static/js/main.a528e5f7.js"
+    "static/css/main.93eacdac.css",
+    "static/js/main.3c0bf1ca.js"
   ]
 }
