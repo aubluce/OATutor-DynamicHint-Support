@@ -1,0 +1,12 @@
+{
+    "id": "add6a02ctrl4c",
+    "stepAnswer": [
+        "$$3$$"
+    ],
+    "problemType": "TextBox",
+    "stepTitle": "Consider how the slope of each line can give us a hint as to whether Angel or Robin reached their respective destinations faster.",
+    "stepBody": "If you could re-do your response to the previous question, would you use this information? Why or why not?",
+    "answerType": "arithmetic",
+    "variabilization": {},
+    "answerLatex": "$$3$$"
+}

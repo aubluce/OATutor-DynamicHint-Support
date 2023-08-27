@@ -1,0 +1,12 @@
+{
+    "id": "ad82655gpt4d",
+    "stepAnswer": [
+        "$$3$$"
+    ],
+    "problemType": "TextBox",
+    "stepTitle": "Revise your own response.",
+    "stepBody": "Please keep in mind the AI bot's changes, and revise your own original response below.",
+    "answerType": "arithmetic",
+    "variabilization": {},
+    "answerLatex": "$$3$$"
+}

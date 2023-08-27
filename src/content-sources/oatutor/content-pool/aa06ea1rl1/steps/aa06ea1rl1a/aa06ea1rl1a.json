@@ -1,0 +1,17 @@
+{
+    "id": "aa06ea1rl1a",
+    "stepAnswer": [
+        "Male"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "What gender do you identify as?",
+    "stepBody": "",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "Male",
+        "Female",
+        "Non binary",
+        "Prefer not to say"
+    ]
+}

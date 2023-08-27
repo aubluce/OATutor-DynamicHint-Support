@@ -1,0 +1,18 @@
+{
+    "id": "aa06ea1rl1d",
+    "stepAnswer": [
+        "STATXXX at UCF"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "In which of the following courses are you enrolled?",
+    "stepBody": "",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "STATXXX at UCF",
+        "STATXYZ at UCF",
+        "STATZZZ at SCF",
+        "STATYYY at SCF",
+        "Other"
+    ]
+}

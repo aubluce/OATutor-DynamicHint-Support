@@ -1,0 +1,19 @@
+{
+    "id": "aa06ea1rl1c",
+    "stepAnswer": [
+        "Hispanic"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "What is your ethnicity?",
+    "stepBody": "",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "American Indian or Alaskan Native",
+        "Asian / Pacific Islander",
+        "Black or African American",
+        "Hispanic",
+        "White / Caucasian",
+        "Multiple ethnicities / Other"
+    ]
+}
