@@ -1,0 +1,12 @@
+{
+    "id": "a28d3bfrl4c",
+    "stepAnswer": [
+        "$$3$$"
+    ],
+    "problemType": "TextBox",
+    "stepTitle": "We need your help!\\nThe bot is still in training so it doesn't write in perfect English, and sometimes messes up.",
+    "stepBody": "Write a couple sentences to critique the bot's changes: what did the bot add or remove, and why does this make your response better or worse?",
+    "answerType": "arithmetic",
+    "variabilization": {},
+    "answerLatex": "$$3$$"
+}

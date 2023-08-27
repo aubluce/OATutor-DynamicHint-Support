@@ -1,0 +1,12 @@
+[
+    {
+        "id": "ad82655gpt4b-1.0",
+        "type": "hint",
+        "dependencies": [],
+        "title": "We're training an Artificial Intelligence (AI) bot to change your response so that it may be more correct.\\n",
+        "text": "Look at how the AI bot revised your response below, then proceed to the next question.",
+        "variabilization": {},
+        "oer": "",
+        "license": ""
+    }
+]

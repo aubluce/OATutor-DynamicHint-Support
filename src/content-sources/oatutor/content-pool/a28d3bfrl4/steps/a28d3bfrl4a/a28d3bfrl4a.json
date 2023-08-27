@@ -1,0 +1,15 @@
+{
+    "id": "a28d3bfrl4a",
+    "stepAnswer": [
+        "Angel"
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Who made it to their destination faster?",
+    "stepBody": "",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "Angel",
+        "Robin"
+    ]
+}

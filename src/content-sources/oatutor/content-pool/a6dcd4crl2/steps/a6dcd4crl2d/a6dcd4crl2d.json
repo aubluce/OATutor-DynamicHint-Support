@@ -1,0 +1,18 @@
+{
+    "id": "a6dcd4crl2d",
+    "stepAnswer": [
+        "Starting elevation of Angel's hike."
+    ],
+    "problemType": "MultipleChoice",
+    "stepTitle": "Each symbols in the linear equation $$y=mx+b$$ represents a \u201creal-life\u201d component of Angel's $$2000$$ ft hike to the bottom of Mt. Tam.",
+    "stepBody": "What does the symbol $$b$$ represent?",
+    "answerType": "string",
+    "variabilization": {},
+    "choices": [
+        "Angel's change in elevation in one minute.",
+        "Starting elevation of Angel's hike.",
+        "Number of minutes.",
+        "Angel's elevation after a given number of minutes.",
+        "Total distance of Angel's hike."
+    ]
+}
