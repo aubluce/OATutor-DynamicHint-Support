@@ -45,12 +45,15 @@ class ProblemCard extends React.Component {
         this.giveStuFeedback = props.giveStuFeedback;
         this.giveStuHints = props.giveStuHints;
         this.unlockFirstHint = props.unlockFirstHint;
+        this.giveHintOnIncorrect = props.giveHintOnIncorrect;
+
         this.allowRetry = this.giveStuFeedback;
 
         this.giveStuBottomHint = props.giveStuBottomHint;
         this.giveDynamicHint = props.giveDynamicHint;
         this.showHints = this.giveStuHints == null || this.giveStuHints;
         this.showCorrectness = this.giveStuFeedback;
+        this.expandFirstIncorrect = false;
 
         this.problemTitle = props.problemTitle;
         this.problemSubTitle = props.problemSubTitle;
@@ -172,6 +175,7 @@ class ProblemCard extends React.Component {
     componentDidMount() {
         // Start an asynchronous task
         this.updateBioInfo();
+        console.log("student show hints status: ", this.showHints);
     }
 
     componentDidUpdate(prevProps) {
@@ -216,6 +220,11 @@ class ProblemCard extends React.Component {
         });
 
         const isCorrect = !!correctAnswer;
+
+        if (!isCorrect) {
+            this.expandFirstIncorrect = true;
+            this.toggleHints("auto-expand");
+        }
 
         this.context.firebase.log(
             parsed,
@@ -507,7 +516,19 @@ class ProblemCard extends React.Component {
                             </h3>
                             {this.state.dynamicHint ? (
                                 <div className="dynamicHintContent">
-                                    {this.state.dynamicHint}
+                                    {renderText(
+                                        this.state.dynamicHint,
+                                        problemID,
+                                        chooseVariables(
+                                            Object.assign(
+                                                {},
+                                                problemVars,
+                                                this.step.variabilization
+                                            ),
+                                            seed
+                                        ),
+                                        this.context
+                                    )}
                                 </div>
                             ) : (
                                 <div className="dynamicHintContent">
@@ -524,6 +545,9 @@ class ProblemCard extends React.Component {
                                     descriptor={"hint"}
                                 >
                                     <HintSystem
+                                        giveHintOnIncorrect={
+                                            this.giveHintOnIncorrect
+                                        }
                                         giveDynamicHint={this.giveDynamicHint}
                                         giveStuFeedback={this.giveStuFeedback}
                                         unlockFirstHint={this.unlockFirstHint}
@@ -543,6 +567,7 @@ class ProblemCard extends React.Component {
                                         answerMade={this.props.answerMade}
                                         lesson={this.props.lesson}
                                         courseName={this.props.courseName}
+                                        isIncorrect={this.expandFirstIncorrect}
                                     />
                                 </ErrorBoundary>
                                 <Spacer />

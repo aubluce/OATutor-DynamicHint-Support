@@ -42,8 +42,8 @@ import bktParams2 from "./content-sources/oatutor/bkt-params/bktParams2.json";
 import { heuristic as lowestHeuristic } from "./models/BKT/problem-select-heuristics/problemSelectHeuristic1.js";
 import { heuristic as highestHeuristic } from "./models/BKT/problem-select-heuristics/problemSelectHeuristic2.js";
 import BrowserStorage from "./util/browserStorage";
-import BioInfo from "./platform-logic/bioInfo";
 // ### END CUSTOMIZABLE IMPORTS ###
+import BioInfo from "./platform-logic/bioInfo";
 
 loadFirebaseEnvConfig(config);
 
