@@ -23,6 +23,7 @@ import {
     IS_STAGING_PLATFORM,
 } from "../util/getBuildType";
 
+const aubreyExperimentData = "aubreyExperimentData";
 const problemSubmissionsOutput = "problemSubmissions";
 const problemStartLogOutput = "problemStartLogs";
 const GPTExperimentOutput = "GPTExperimentOutput";
@@ -244,9 +245,9 @@ class Firebase {
             knowledgeComponents: step?.knowledgeComponents,
             hintType,
             dynamicHint,
-            bioInfo,
+            // bioInfo,
         };
-        return this.writeData(GPTExperimentOutput, data);
+        return this.writeData(aubreyExperimentData, data);
         // return this.writeData(problemSubmissionsOutput, data);
     }
 
@@ -286,9 +287,9 @@ class Firebase {
             knowledgeComponents: step?.knowledgeComponents,
             hintType,
             dynamicHint,
-            bioInfo,
+            // bioInfo,
         };
-        return this.writeData(GPTExperimentOutput, data);
+        return this.writeData(aubreyExperimentData, data);
         // return this.writeData(problemSubmissionsOutput, data);
     }
 

@@ -54,11 +54,13 @@
                 "learningObjectives": {
                     "kc_rl": 0.85
                 },
+                "dynamicHintURL": "https://quadro.ist.berkeley.edu:1336/predict?input=",
                 "giveStuFeedback": false,
                 "giveStuHints": true,
                 "doMasteryUpdate": false,
                 "showStuMastery": false,
                 "unlockFirstHint": true,
+                "allowDynamicHint": true,
                 "allowBottomHint": false
             },
             {
@@ -69,10 +71,12 @@
                 "learningObjectives": {
                     "kc_gpt": 0.85
                 },
+                "dynamicHintURL": "https://quadro.ist.berkeley.edu:1338/get_revision?input=",
                 "giveStuFeedback": false,
                 "giveStuHints": true,
                 "doMasteryUpdate": false,
                 "showStuMastery": false,
+                "allowDynamicHint": true,
                 "unlockFirstHint": true
             },
             {
