@@ -6,8 +6,8 @@
         "lessons": [
             {
                 "id": "53ktkMzA-rctR-gKOtT5p1g7",
-                "name": "Lesson Demographic",
-                "topics": "Survey",
+                "name": "Demographic Questions",
+                "topics": "",
                 "allowRecycle": false,
                 "learningObjectives": {
                     "kc_dem": 0.85
@@ -16,11 +16,12 @@
                 "giveStuHints": false,
                 "doMasteryUpdate": false,
                 "showStuMastery": false,
-                "unlockFirstHint": false
+                "unlockFirstHint": false, 
+		"allowBottomHint": false
             },
             {
                 "id": "61HNE7O2-DdZ9-uBIv4GvGiQ",
-                "name": "Lesson A",
+                "name": "Elements of an Equation",
                 "topics": "",
                 "allowRecycle": false,
                 "learningObjectives": {
@@ -30,11 +31,12 @@
                 "giveStuHints": false,
                 "doMasteryUpdate": false,
                 "showStuMastery": false,
-                "unlockFirstHint": false
+                "unlockFirstHint": false, 
+		"allowBottomHint": false
             },
             {
                 "id": "3C4ufprf-0RMf-5Pf4XxOVpl",
-                "name": "Lesson B",
+                "name": "What's Wrong with the Equation",
                 "topics": "",
                 "allowRecycle": false,
                 "learningObjectives": {
@@ -44,11 +46,12 @@
                 "giveStuHints": false,
                 "doMasteryUpdate": false,
                 "showStuMastery": false,
-                "unlockFirstHint": false
+                "unlockFirstHint": false, 
+		"allowBottomHint": false
             },
             {
                 "id": "3c1t3hLO-0naI-WogkqTNFA3",
-                "name": "Lesson RL_int",
+                "name": "Hiking 1",
                 "topics": "",
                 "allowRecycle": false,
                 "learningObjectives": {
@@ -65,7 +68,7 @@
             },
             {
                 "id": "146Vl2FB-zkdK-jOtesGwj0x",
-                "name": "Lesson ChatGPT_int",
+                "name": "Hiking 2",
                 "topics": "",
                 "allowRecycle": false,
                 "learningObjectives": {
@@ -77,11 +80,12 @@
                 "doMasteryUpdate": false,
                 "showStuMastery": false,
                 "allowDynamicHint": true,
-                "unlockFirstHint": true
+                "unlockFirstHint": true, 
+		"allowBottomHint": false
             },
             {
                 "id": "6kgY46XN-JiiS-KG2z3VJ2yh",
-                "name": "Lesson Ctrl",
+                "name": "Hiking 3",
                 "topics": "",
                 "allowRecycle": false,
                 "learningObjectives": {
@@ -91,7 +95,8 @@
                 "giveStuHints": true,
                 "doMasteryUpdate": false,
                 "showStuMastery": false,
-                "unlockFirstHint": true
+                "unlockFirstHint": true,
+		"allowBottomHint": false
             }
         ]
     }
