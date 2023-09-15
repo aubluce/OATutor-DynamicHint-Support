@@ -6,7 +6,7 @@
     "problemType": "MultipleChoice",
     "stepTitle": "Who made it to their destination faster?",
     "stepBody": "",
-    "answerType": "short-essay",
+    "answerType": "string",
     "variabilization": {},
     "choices": [
         "Angel",
