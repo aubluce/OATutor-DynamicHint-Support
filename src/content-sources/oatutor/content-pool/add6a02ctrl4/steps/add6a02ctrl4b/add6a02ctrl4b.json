@@ -6,7 +6,7 @@
     "problemType": "TextBox",
     "stepTitle": "What feature(s) of the graph led you to make your selection above?",
     "stepBody": "",
-    "answerType": "arithmetic",
+    "answerType": "short-essay",
     "variabilization": {},
     "answerLatex": "$$3$$"
 }
