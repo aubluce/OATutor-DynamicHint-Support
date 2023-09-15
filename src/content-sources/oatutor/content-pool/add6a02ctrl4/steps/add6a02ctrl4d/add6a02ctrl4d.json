@@ -6,7 +6,7 @@
     "problemType": "TextBox",
     "stepTitle": "Revise your own response.",
     "stepBody": "Think about the hint you just received, and revise your original response below.",
-    "answerType": "arithmetic",
+    "answerType": "short-essay",
     "variabilization": {},
     "answerLatex": "$$3$$"
 }
