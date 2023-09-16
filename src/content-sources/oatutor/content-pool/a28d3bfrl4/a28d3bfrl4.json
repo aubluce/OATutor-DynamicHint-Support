@@ -1,10 +1,10 @@
 {
     "id": "a28d3bfrl4",
     "title": "Crossing Paths",
-    "body": "At the same time Angel begins her hike to the bottom of Mt. Tam, Robin begins her hike to\\nthe top, on the same road. Robin also hikes at a constant rate of speed.\\nThe red line in the graph above shows Angel\u2019s downhill hike while the blue line shows\\nRobin\u2019s uphill hike.\\n##figure1.gif",
+    "body": "Angel and Robin begin hiking at the same time, both at a constant rate of speed. Angel starts from the top of Mt. Tam,\\n and Robin starts from the bottom. The red line shows Angel\u2019s downhill hike \\nwhile the blue line shows Robin\u2019s uphill hike."
     "variabilization": {},
     "oer": "https://openstax.org/details/books/college-algebra-2e <OpenStax: College Algebra>",
     "license": "https://creativecommons.org/licenses/by/4.0/ <CC BY 4.0>",
-    "lesson": "RL_int",
+    "lesson": "Hiking 1",
     "courseName": "Research Survey"
 }
