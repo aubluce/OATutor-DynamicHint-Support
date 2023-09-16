@@ -56,6 +56,7 @@ class Problem extends React.Component {
         this.prompt_template = this.props.lesson?.prompt_template
             ? this.props.lesson?.prompt_template
             : "";
+        this.dynamicHintURL = this.props.lesson?.dynamicHintURL;
 
         this.state = {
             stepStates: {},
@@ -463,6 +464,7 @@ class Problem extends React.Component {
                                     giveStuBottomHint={this.giveStuBottomHint}
                                     giveDynamicHint={this.giveDynamicHint}
                                     prompt_template={this.prompt_template}
+                                    dynamicHintURL={this.dynamicHintURL}
                                 />
                             </Element>
                         ))}
