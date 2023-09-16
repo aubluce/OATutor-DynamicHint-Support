@@ -45,7 +45,7 @@ class ProblemCard extends React.Component {
         this.giveStuFeedback = props.giveStuFeedback;
         this.giveStuHints = props.giveStuHints;
         this.unlockFirstHint = props.unlockFirstHint;
-        this.giveHintOnIncorrect = props.giveHintOnIncorrect
+        this.giveHintOnIncorrect = props.giveHintOnIncorrect;
 
         this.allowRetry = this.giveStuFeedback;
 
@@ -60,6 +60,8 @@ class ProblemCard extends React.Component {
         this.prompt_template = props.prompt_template
             ? props.prompt_template
             : DYNAMIC_HINT_TEMPLATE;
+        this.dynamicHintURL = props.dynamicHintURL;
+
         console.debug(
             "this.step",
             this.step,
@@ -223,7 +225,7 @@ class ProblemCard extends React.Component {
 
         if (!isCorrect) {
             this.expandFirstIncorrect = true;
-            this.toggleHints('auto-expand');
+            this.toggleHints("auto-expand");
         }
 
         this.context.firebase.log(
@@ -427,18 +429,22 @@ class ProblemCard extends React.Component {
 
         const isCorrect = !!correctAnswer;
 
+        console.log(
+            this.dynamicHintURL +
+                (this.state.inputVal.length > 0 ? this.state.inputVal : "n/a")
+        );
         axios
             .post(
-                DYNAMIC_HINT_URL,
-                this.generateGPTHintParameters(
-                    this.prompt_template,
-                    this.state.bioInfo
-                )
+                this.dynamicHintURL +
+                    (this.state.inputVal.length > 0
+                        ? this.state.inputVal
+                        : "n/a")
             )
             .then((response) => {
                 this.setState({
                     dynamicHint: response.data.hint,
                 });
+                console.log(response.data.hint);
                 this.context.firebase.log(
                     parsed,
                     this.props.problemID,
@@ -511,9 +517,7 @@ class ProblemCard extends React.Component {
                     </div>
                     {displayHints && this.giveDynamicHint && (
                         <div className="dynamicHintContainer">
-                            <h3 className="dynamicHintTitle">
-                                Hint From ChatGPT
-                            </h3>
+                            <h3 className="dynamicHintTitle">Dynamic Hint</h3>
                             {this.state.dynamicHint ? (
                                 <div className="dynamicHintContent">
                                     {renderText(
@@ -545,7 +549,9 @@ class ProblemCard extends React.Component {
                                     descriptor={"hint"}
                                 >
                                     <HintSystem
-                                        giveHintOnIncorrect={this.giveHintOnIncorrect}
+                                        giveHintOnIncorrect={
+                                            this.giveHintOnIncorrect
+                                        }
                                         giveDynamicHint={this.giveDynamicHint}
                                         giveStuFeedback={this.giveStuFeedback}
                                         unlockFirstHint={this.unlockFirstHint}
@@ -607,7 +613,8 @@ class ProblemCard extends React.Component {
                     >
                         <Grid item xs={false} sm={false} md={4} />
                         <Grid item xs={4} sm={4} md={1}>
-                            {this.showHints && (
+                            {/* {this.showHints && ( */}
+                            {false && (
                                 <center>
                                     <IconButton
                                         aria-label="delete"
