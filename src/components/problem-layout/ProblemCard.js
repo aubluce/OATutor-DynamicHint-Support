@@ -513,7 +513,7 @@ class ProblemCard extends React.Component {
                             this.context
                         )}
                     </div>
-                    {displayHints && this.giveDynamicHint && this.step.id == "a28d3bfrl4b" && (
+                    {displayHints && this.giveDynamicHint && (this.step.id == "a28d3bfrl4b" || this.step.id == "ad82655gpt4b" ) && (
                         <div className="dynamicHintContainer">
                             <h3 className="dynamicHintTitle">
                         
