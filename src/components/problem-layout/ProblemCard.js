@@ -249,8 +249,6 @@ class ProblemCard extends React.Component {
 
         if (this.showCorrectness) {
             toastNotifyCorrectness(isCorrect, reason);
-        } else {
-            toastNotifyCompletion();
         }
 
         this.setState({
@@ -517,7 +515,12 @@ class ProblemCard extends React.Component {
                     </div>
                     {displayHints && this.giveDynamicHint && (
                         <div className="dynamicHintContainer">
-                            <h3 className="dynamicHintTitle">Dynamic Hint</h3>
+                            <h3 className="dynamicHintTitle">
+                        
+                            We are training an AI bot to change your response so that it may be more correct - 
+                            Look at how the AI bot revised your response below, then proceed to the next question.
+                        
+                            </h3>
                             {this.state.dynamicHint ? (
                                 <div className="dynamicHintContent">
                                     {renderText(
