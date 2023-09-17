@@ -111,7 +111,7 @@ class ProblemInput extends React.Component {
                             />
                         </center>
                     )}
-                    {(problemType === "TextBox" && this.props.step.answerType === "string") && (
+                    {(problemType === "bloop" && this.props.step.answerType === "string") && (
                         <TextField
                             ref={this.textFieldRef}
                             inputProps={{
