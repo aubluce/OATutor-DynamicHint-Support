@@ -94,7 +94,7 @@ class ProblemInput extends React.Component {
                 className={clsx(disableInput && 'disable-interactions')}>
                 <Grid item xs={1} md={problemType === "TextBox" ? 4 : false}/>
                 <Grid item xs={9} md={problemType === "TextBox" ? 3 : 12}>
-                    {(problemType === "TextBox" && this.props.step.answerType !== "string") && (
+                    {(problemType === "TextBox" && this.props.step.answerType !== "string" && this.props.step.answerType !== "short-essay") && (
                         <center
                             ref={this.equationRef}
                             className={clsx(showCorrectness && state.isCorrect === false && classes.textBoxLatexIncorrect, state.usedHints && classes.textBoxLatexUsedHint, classes.textBoxLatex)}
@@ -111,7 +111,7 @@ class ProblemInput extends React.Component {
                             />
                         </center>
                     )}
-                    {(problemType === "bloop" && this.props.step.answerType === "string") && (
+                    {(problemType === "TextBox" && this.props.step.answerType === "string") && (
                         <TextField
                             ref={this.textFieldRef}
                             inputProps={{
@@ -140,7 +140,7 @@ class ProblemInput extends React.Component {
                     )}
                     {(problemType === "TextBox" && this.props.step.answerType === "short-essay") && (
                         <textarea
-                            className="short-essay-input"
+                            className={classes.inputField}
                             onChange={(evt) => this.props.editInput(evt)}
                             onKeyPress={(evt) => this.props.handleKey(evt)}
                         >
