@@ -141,7 +141,7 @@ function checkAnswer({ attempt, actual, answerType, precision = 5, variabilizati
                 return [parsed.print(), false, WrongAnswerReasons.wrong];
             }
 
-        } else if (answerType === "string") {
+        } else if (answerType === "string" || answerType === "short-essay") {
             parsed = attempt;
             //console.log(parsed);
             //console.log(actual);
