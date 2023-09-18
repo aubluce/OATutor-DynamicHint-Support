@@ -5,7 +5,7 @@
     ],
     "problemType": "TextBox",
     "stepTitle": "We need your help!\\nThe bot is still in training so it doesn't write in perfect English, and sometimes messes up.",
-    "stepBody": "Write a couple sentences to critique the bot's changes: what did the bot add or remove, and why does this make your response better or worse?",
+    "stepBody": "What did the bot add to, or remove from your response, and why does this make your response better or worse?",
     "answerType": "short-essay",
     "variabilization": {},
     "answerLatex": "$$3$$"
