@@ -149,7 +149,7 @@ class ProblemInput extends React.Component {
                     {problemType === "MultipleChoice" && (
                         <MultipleChoice
                             onChange={(evt) => this.props.editInput(evt)}
-                            choices={shuffleArray(this.props.step.choices, this.props.seed)}
+                            choices={this.props.step.choices}
                             index={index}
                             {...(use_expanded_view && debug) ? {
                                 defaultValue: correctAnswer
