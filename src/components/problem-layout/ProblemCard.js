@@ -376,12 +376,11 @@ class ProblemCard extends React.Component {
     };
 
     generateGPTHintParameters = (prompt_template, bio_info) => {
-        var inputVal = "";
+        var inputVal = this.state.inputVal;
         if (
-            typeof this.state.inputVal === "string" &&
-            this.state.inputVal.length > 0
+            this.state.inputVal.length == 0
         ) {
-            inputVal = this.state.inputVal;
+            inputVal = " ";
         }
         var correctAnswer = "";
         if (
