@@ -4,15 +4,18 @@
         ""
     ],
     "problemType": "MultipleChoice",
-    "stepTitle": "Which school do you currently attend?",
+    "stepTitle": "In which of the following courses are you enrolled?",
     "stepBody": "",
     "answerType": "string",
     "variabilization": {},
     "choices": [
-        "University of Central Florida",
-        "State College of Florida",
-        "Davidson College",
-        "A college not listed",
-        "I am not a college student"
+        "STA 1001",
+        "STA 2023 at SCF",
+        "STA 2023 at UCF",
+        "MTH 4420",
+        "STA 4102",
+        "STA 4173",
+        "CSC 110",
+        "Not Applicable or None of the Above"
     ]
 }
