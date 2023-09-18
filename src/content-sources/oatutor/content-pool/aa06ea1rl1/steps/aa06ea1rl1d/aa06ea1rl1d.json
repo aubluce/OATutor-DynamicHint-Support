@@ -9,13 +9,13 @@
     "answerType": "string",
     "variabilization": {},
     "choices": [
+        "Not Applicable or None of the Above",
         "STA 1001",
         "STA 2023 at SCF",
         "STA 2023 at UCF",
         "MTH 4420",
         "STA 4102",
         "STA 4173",
-        "CSC 110",
-        "Not Applicable or None of the Above"
+        "CSC 110"
     ]
 }
